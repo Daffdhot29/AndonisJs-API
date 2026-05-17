@@ -27,7 +27,7 @@ router
     
     router
       .group(() => { 
-        router.post('create', [controllers.CreateItem, 'store'])
+        router.post(':/idcreate', [controllers.CreateItem, 'store'])
         router.post('update', [controllers.UpdateItem, 'store'])
       })
       .prefix('items')
